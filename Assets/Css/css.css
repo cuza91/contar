@@ -1,11 +1,7 @@
-body{
+body {
     background-color: rgb(145, 145, 249);
 }
 
-row{
-    background-color: rgb(205, 205, 231);
-}
-
-p{
-    color:aliceblue;
+p {
+    color: aliceblue;
 }
