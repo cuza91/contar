@@ -1,7 +1,11 @@
-body {
-    background-color: rgb(145, 145, 249);
+.h4{
+padding: ;
 }
 
-p {
-    color: aliceblue;
+.h5{
+padding: 10px; 
+}
+
+.col{
+    padding: 10px;
 }
