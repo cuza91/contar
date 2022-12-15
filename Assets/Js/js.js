@@ -13,7 +13,21 @@ function calcular() {
     var k = parseFloat(document.getElementById("b20").value * 20);
     var l = parseFloat(document.getElementById("b0.05").value * 0.05);
 
-    document.getElementById("pcup").value = a + b + c + d + e + f + g + h + i + j + k + l +" cup";
+    document.getElementById("pcup").value = a + b + c + d + e + f + g + h + i + j + k + l + " cup";
 
 
 };
+
+
+function cup() {
+
+
+
+
+};
+
+function usd() {
+
+
+};
+
