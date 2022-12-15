@@ -29,7 +29,7 @@
                 <label class="h5 text-light">Parcial CUP:</label>
                 <input id="pcup" disabled type="text"><br>
                 <label class="h5 text-light">Parcial USD:</label>
-                <input disabled type="text">
+                <input id="pusd" disabled type="text">
             </div>
             <div class="col-sm-5">
                 <label class="h5 text-light">Total CUP:</label>
@@ -145,8 +145,8 @@
                         <div class="row ">
 
                             <div class="col">
-                                <button type="submit" class="btn btn-primary ">Limpiar</button>
-                                <button type="button" onclick="calcular()" class="btn btn-primary ">Calcular</button>
+                                <button type="button" onclick="limpiarMn()"  class="btn btn-primary ">Limpiar</button>
+                                <button type="button" onclick="calcularmn()" class="btn btn-primary ">Calcular</button>
                             </div>
 
                         </div>
@@ -163,11 +163,11 @@
 
                             <div class="col">
                                 <input title="billetes de 1000" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 1000" id="b1000">
+                                    placeholder="Billetes de 1000" id="u1000">
                             </div>
                             <div class="col">
                                 <input min="0" title="billetes de 10" type="number" class="form-control"
-                                    placeholder="Billetes de 10" id="b10">
+                                    placeholder="Billetes de 10" id="u10">
                             </div>
 
                         </div>
@@ -176,11 +176,11 @@
 
                             <div class="col">
                                 <input min="0" title="billetes de 500" type="number" class="form-control"
-                                    placeholder="Billetes de 500" id="b500">
+                                    placeholder="Billetes de 500" id="u500">
                             </div>
                             <div class="col">
                                 <input title="billetes de 5" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 5" id="b5">
+                                    placeholder="Billetes de 5" id="u5">
                             </div>
 
                         </div>
@@ -189,11 +189,11 @@
 
                             <div class="col">
                                 <input title="billetes de 200" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 200" id="b200">
+                                    placeholder="Billetes de 200" id="u200">
                             </div>
                             <div class="col">
                                 <input title="billetes de 3" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 3" id="b3">
+                                    placeholder="Billetes de 3" id="u3">
                             </div>
 
                         </div>
@@ -202,11 +202,11 @@
 
                             <div class="col">
                                 <input title="billetes de 100" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 100" id="b100">
+                                    placeholder="Billetes de 100" id="u100">
                             </div>
                             <div class="col">
                                 <input title="billetes de 1" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 1" id="b1">
+                                    placeholder="Billetes de 1" id="u1">
                             </div>
 
                         </div>
@@ -215,11 +215,11 @@
 
                             <div class="col">
                                 <input title="billetes de 50" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 50" id="b50">
+                                    placeholder="Billetes de 50" id="u50">
                             </div>
                             <div class="col">
                                 <input title="monedas de 0.20" min="0" type="number" class="form-control"
-                                    placeholder="Monedas de 0.20" id="b0.2">
+                                    placeholder="Monedas de 0.20" id="u0.2">
                             </div>
 
                         </div>
@@ -228,11 +228,11 @@
 
                             <div class="col">
                                 <input title="billetes de 20" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 20" id="b20">
+                                    placeholder="Billetes de 20" id="u20">
                             </div>
                             <div class="col">
                                 <input title="monedas de 0.05" min="0" type="number" class="form-control"
-                                    placeholder="Monedas  de 0.05" id="b0.05">
+                                    placeholder="Monedas  de 0.05" id="u0.05">
                             </div>
 
                         </div>
@@ -240,8 +240,8 @@
                         <div class="row ">
 
                             <div class="col">
-                                <button type="submit" class="btn btn-primary ">Limpiar</button>
-                                <button type="button" onclick="calcular()" class="btn btn-primary ">Calcular</button>
+                                <button type="button"  onclick="limpiarUsd()" class="btn btn-primary ">Limpiar</button>
+                                <button type="button" onclick="calcularusd()" class="btn btn-primary ">Calcular</button>
                             </div>
 
                         </div>
