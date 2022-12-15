@@ -39,13 +39,13 @@ function calcularusd() {
 };
 
 
-function limpiarMn(){
+function limpiarMn() {
     document.getElementById("b1000").value = "";
     document.getElementById("b10").value = "";
     document.getElementById("b500").value = "";
     document.getElementById("b5").value = "";
-    document.getElementById("b200").value  = "";
-    document.getElementById("b3").value  = "";
+    document.getElementById("b200").value = "";
+    document.getElementById("b3").value = "";
     document.getElementById("b100").value = "";
     document.getElementById("b1").value = "";
     document.getElementById("b50").value = "";
@@ -57,13 +57,13 @@ function limpiarMn(){
 
 };
 
-function limpiarUsd(){
+function limpiarUsd() {
     document.getElementById("u1000").value = "";
     document.getElementById("u10").value = "";
     document.getElementById("u500").value = "";
     document.getElementById("u5").value = "";
-    document.getElementById("u200").value  = "";
-    document.getElementById("u3").value  = "";
+    document.getElementById("u200").value = "";
+    document.getElementById("u3").value = "";
     document.getElementById("u100").value = "";
     document.getElementById("u1").value = "";
     document.getElementById("u50").value = "";
@@ -78,13 +78,18 @@ function limpiarUsd(){
 
 
 function cup() {
-
-
+    document.getElementById("section1").style.display = "contents";
+    document.getElementById("section2").style.display = "none";
+   
 
 
 };
 
 function usd() {
+    document.getElementById("section2").style.display = "contents";
+    document.getElementById("section1").style.display = "none";
+    
+
 
 
 };
