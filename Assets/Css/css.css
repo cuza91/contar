@@ -1,11 +1,21 @@
-.h4{
-padding: ;
-}
-
-.h5{
-padding: 10px; 
-}
-
-.col{
+.h5 {
     padding: 10px;
 }
+
+.col {
+    padding: 10px;
+}
+
+
+
+#monedas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+
+
+
+
