@@ -61,16 +61,16 @@
 
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu2">Definir Tasa de Cambio Manual</a>
+                            <a id="tc" onclick="tasacambio()" class="nav-link" data-bs-toggle="tab" href="#menu2">Definir Tasa de Cambio</a>
                         </li>
                     </ul>
 
                     <!-- Tab panes -->
-                    <div class="tab-content">
+                    <div id="itc" class="tab-content">
                         <div class="tab-pane container fade" id="menu2">
                             <div class="input-group">
                                 <div class="input-group-prepend" >
-                                  <span class="input-group-text" id="">Tasa de Cambio</span>
+                                  <span class="input-group-text" >Tasa de Cambio</span>
                                 </div>
                                 <input id="tasa-cambio" type="number" class="form-control">
                             </div>
