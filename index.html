@@ -33,9 +33,9 @@
             </div>
             <div class="col-sm-5">
                 <label class="h5 text-light">Total CUP:</label>
-                <input disabled type="text"><br>
+                <input id="tcup"  disabled type="text"><br>
                 <label class="h5 text-light">Total USD:</label>
-                <input disabled type="text">
+                <input id="tusd" disabled type="text">
             </div>
         </div>
 
@@ -47,209 +47,235 @@
                             <a class="nav-link disabled">Moneda</a>
                         </li>
                         <li class="nav-item">
-                            <a onclick="cup()" id="cup" class="nav-link active" aria-current="page" href="#section1">CUP</a>
+                            <a onclick="cup()" id="cup" class="nav-link active " aria-current="page"
+                                href="#section1">CUP</a>
                         </li>
                         <li class="nav-item">
-                            <a onclick="usd()" id="usd" class="nav-link active" aria-current="page" href="#section2">USD</a>
+                            <a onclick="usd()" id="usd" class="nav-link active" aria-current="page"
+                                href="#section2">USD</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#menu2">Definir Tasa de Cambio Manual</a>
                         </li>
                     </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container fade" id="menu2">
+                            <div class="input-group">
+                                <div class="input-group-prepend" >
+                                  <span class="input-group-text" id="">Tasa de Cambio</span>
+                                </div>
+                                <input id="tasa-cambio" type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <div class="row bg-light ">
                 <div class="col-sm-2 "> </div>
-                <div  class="col-sm-8">
+                <div class="col-sm-8">
 
                     <section id="section1">
-                    <form id="form1" action="">
-                        <p class="h5 text-center text-dark">Recuento de CUP</p>
+                        <form id="form1" action="">
+                            <p class="h5 text-center text-dark">Recuento de CUP</p>
 
 
-                        <div class="row">
+                            <div class="row">
 
-                            <div class="col">
-                                <input title="billetes de 1000" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 1000" id="b1000">
-                            </div>
-                            <div class="col">
-                                <input min="0" title="billetes de 10" type="number" class="form-control"
-                                    placeholder="Billetes de 10" id="b10">
-                            </div>
+                                <div class="col">
+                                    <input title="billetes de 1000" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 1000" id="b1000">
+                                </div>
+                                <div class="col">
+                                    <input min="0" title="billetes de 10" type="number" class="form-control"
+                                        placeholder="Billetes de 10" id="b10">
+                                </div>
 
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col">
-                                <input min="0" title="billetes de 500" type="number" class="form-control"
-                                    placeholder="Billetes de 500" id="b500">
-                            </div>
-                            <div class="col">
-                                <input title="billetes de 5" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 5" id="b5">
                             </div>
 
-                        </div>
+                            <div class="row">
 
-                        <div class="row">
+                                <div class="col">
+                                    <input min="0" title="billetes de 500" type="number" class="form-control"
+                                        placeholder="Billetes de 500" id="b500">
+                                </div>
+                                <div class="col">
+                                    <input title="billetes de 5" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 5" id="b5">
+                                </div>
 
-                            <div class="col">
-                                <input title="billetes de 200" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 200" id="b200">
-                            </div>
-                            <div class="col">
-                                <input title="billetes de 3" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 3" id="b3">
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col">
-                                <input title="billetes de 100" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 100" id="b100">
-                            </div>
-                            <div class="col">
-                                <input title="billetes de 1" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 1" id="b1">
                             </div>
 
-                        </div>
+                            <div class="row">
 
-                        <div class="row">
+                                <div class="col">
+                                    <input title="billetes de 200" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 200" id="b200">
+                                </div>
+                                <div class="col">
+                                    <input title="billetes de 3" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 3" id="b3">
+                                </div>
 
-                            <div class="col">
-                                <input title="billetes de 50" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 50" id="b50">
-                            </div>
-                            <div class="col">
-                                <input title="monedas de 0.20" min="0" type="number" class="form-control"
-                                    placeholder="Monedas de 0.20" id="b0.2">
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col">
-                                <input title="billetes de 20" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 20" id="b20">
-                            </div>
-                            <div class="col">
-                                <input title="monedas de 0.05" min="0" type="number" class="form-control"
-                                    placeholder="Monedas  de 0.05" id="b0.05">
                             </div>
 
-                        </div>
+                            <div class="row">
 
-                        <div class="row ">
+                                <div class="col">
+                                    <input title="billetes de 100" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 100" id="b100">
+                                </div>
+                                <div class="col">
+                                    <input title="billetes de 1" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 1" id="b1">
+                                </div>
 
-                            <div class="col">
-                                <button type="button" onclick="limpiarMn()"  class="btn btn-primary ">Limpiar</button>
-                                <button type="button" onclick="calcularmn()" class="btn btn-primary ">Calcular</button>
                             </div>
 
-                        </div>
+                            <div class="row">
+
+                                <div class="col">
+                                    <input title="billetes de 50" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 50" id="b50">
+                                </div>
+                                <div class="col">
+                                    <input title="monedas de 0.20" min="0" type="number" class="form-control"
+                                        placeholder="Monedas de 0.20" id="b0.2">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <input title="billetes de 20" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 20" id="b20">
+                                </div>
+                                <div class="col">
+                                    <input title="monedas de 0.05" min="0" type="number" class="form-control"
+                                        placeholder="Monedas  de 0.05" id="b0.05">
+                                </div>
+
+                            </div>
+
+                            <div class="row ">
+
+                                <div class="col">
+                                    <button type="button" onclick="limpiarMn()"
+                                        class="btn btn-primary ">Limpiar</button>
+                                    <button type="button" onclick="calcularmn()"
+                                        class="btn btn-primary ">Calcular</button>
+                                </div>
+
+                            </div>
 
 
-                    </form>
+                        </form>
                     </section>
 
                     <section id="section2">
-                    <form id="form2" action="">
+                        <form id="form2" action="">
 
-                        <div class="row">
-                            <p class="h5 text-center text-dark">Recuento de USD</p>
+                            <div class="row">
+                                <p class="h5 text-center text-dark">Recuento de USD</p>
 
 
-                            <div class="col">
-                                <input title="billetes de 1000" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 1000" id="u1000">
-                            </div>
-                            <div class="col">
-                                <input min="0" title="billetes de 10" type="number" class="form-control"
-                                    placeholder="Billetes de 10" id="u10">
-                            </div>
+                                <div class="col">
+                                    <input title="billetes de 1000" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 1000" id="u1000">
+                                </div>
+                                <div class="col">
+                                    <input min="0" title="billetes de 10" type="number" class="form-control"
+                                        placeholder="Billetes de 10" id="u10">
+                                </div>
 
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col">
-                                <input min="0" title="billetes de 500" type="number" class="form-control"
-                                    placeholder="Billetes de 500" id="u500">
-                            </div>
-                            <div class="col">
-                                <input title="billetes de 5" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 5" id="u5">
                             </div>
 
-                        </div>
+                            <div class="row">
 
-                        <div class="row">
+                                <div class="col">
+                                    <input min="0" title="billetes de 500" type="number" class="form-control"
+                                        placeholder="Billetes de 500" id="u500">
+                                </div>
+                                <div class="col">
+                                    <input title="billetes de 5" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 5" id="u5">
+                                </div>
 
-                            <div class="col">
-                                <input title="billetes de 200" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 200" id="u200">
-                            </div>
-                            <div class="col">
-                                <input title="billetes de 3" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 3" id="u3">
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col">
-                                <input title="billetes de 100" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 100" id="u100">
-                            </div>
-                            <div class="col">
-                                <input title="billetes de 1" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 1" id="u1">
                             </div>
 
-                        </div>
+                            <div class="row">
 
-                        <div class="row">
+                                <div class="col">
+                                    <input title="billetes de 200" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 200" id="u200">
+                                </div>
+                                <div class="col">
+                                    <input title="billetes de 3" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 3" id="u3">
+                                </div>
 
-                            <div class="col">
-                                <input title="billetes de 50" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 50" id="u50">
-                            </div>
-                            <div class="col">
-                                <input title="monedas de 0.20" min="0" type="number" class="form-control"
-                                    placeholder="Monedas de 0.20" id="u0.2">
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col">
-                                <input title="billetes de 20" min="0" type="number" class="form-control"
-                                    placeholder="Billetes de 20" id="u20">
-                            </div>
-                            <div class="col">
-                                <input title="monedas de 0.05" min="0" type="number" class="form-control"
-                                    placeholder="Monedas  de 0.05" id="u0.05">
                             </div>
 
-                        </div>
+                            <div class="row">
 
-                        <div class="row ">
+                                <div class="col">
+                                    <input title="billetes de 100" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 100" id="u100">
+                                </div>
+                                <div class="col">
+                                    <input title="billetes de 1" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 1" id="u1">
+                                </div>
 
-                            <div class="col">
-                                <button type="button"  onclick="limpiarUsd()" class="btn btn-primary ">Limpiar</button>
-                                <button type="button" onclick="calcularusd()" class="btn btn-primary ">Calcular</button>
                             </div>
 
-                        </div>
+                            <div class="row">
+
+                                <div class="col">
+                                    <input title="billetes de 50" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 50" id="u50">
+                                </div>
+                                <div class="col">
+                                    <input title="monedas de 0.20" min="0" type="number" class="form-control"
+                                        placeholder="Monedas de 0.20" id="u0.2">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <input title="billetes de 20" min="0" type="number" class="form-control"
+                                        placeholder="Billetes de 20" id="u20">
+                                </div>
+                                <div class="col">
+                                    <input title="monedas de 0.05" min="0" type="number" class="form-control"
+                                        placeholder="Monedas  de 0.05" id="u0.05">
+                                </div>
+
+                            </div>
+
+                            <div class="row ">
+
+                                <div class="col">
+                                    <button type="button" onclick="limpiarUsd()"
+                                        class="btn btn-primary ">Limpiar</button>
+                                    <button type="button" onclick="calcularusd()"
+                                        class="btn btn-primary ">Calcular</button>
+                                </div>
+
+                            </div>
 
 
-                    </form>
+                        </form>
                     </section>
 
                 </div>
