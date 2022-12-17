@@ -50,7 +50,6 @@ function sabermn() {
         parseFloat(document.getElementById("b50").value * 50) +
         parseFloat(document.getElementById("b0.2").value * 0.2) +
         parseFloat(document.getElementById("b20").value * 20) +
-        parseFloat(document.getElementById("b20").value * 20) +
         parseFloat(document.getElementById("b0.05").value * 0.05);
 
     return mn;
