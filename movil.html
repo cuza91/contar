@@ -21,19 +21,16 @@
 
 <body class="bg-light">
 
-    <div class="container-fluid">
-
+    <div class="justify-content-center container-fluid">
+        <div class="col-sm-12 justify-content-center">
+            <a class="h5 text-start text-dark" href="index.html">¡ Versión de Escritorio !</a>
+        </div>
         <div class="row bg-primary ">
-            <div class="col-sm-2">
-                <a class="h5 text-start text-light" href="index.html">¡ Versión de Escritorio !</a>
-            </div>
-            <div class="col-sm-5">
+            <div id="panel" class="col-sm-12">
                 <label class="h5 text-light">Parcial CUP:</label>
                 <input id="pcup" disabled type="text"><br>
                 <label class="h5 text-light">Parcial USD:</label>
                 <input id="pusd" disabled type="text">
-            </div>
-            <div class="col-sm-5">
                 <label class="h5 text-light">Total CUP:</label>
                 <input id="tcup" disabled type="text"><br>
                 <label class="h5 text-light">Total USD:</label>
@@ -82,7 +79,7 @@
             </div>
 
             <div class="row bg-light ">
-                <div class="col-sm-2 "> </div>
+
                 <div class="col-sm-8">
 
                     <section id="section1">
@@ -94,14 +91,16 @@
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 1000</span>
                                     <input id="b1000" min="0" title="billetes de 1000" type="number"
-                                        class="form-control" placeholder="Billetes de 1000" aria-label="Username"
+                                        class="form-control" placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
+                            </div>
 
+                            <div class="row">
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 10</span>
                                     <input id="b10" min="0" title="billetes de 10" type="number" class="form-control"
-                                        placeholder="Billetes de 10" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
@@ -110,14 +109,16 @@
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 500</span>
                                     <input id="b500" min="0" title="billetes de 500" type="number" class="form-control"
-                                        placeholder="Billetes de 500" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
+                            </div>
 
+                            <div class="row">
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 5</span>
                                     <input id="b5" min="0" title="billetes de 5" type="number" class="form-control"
-                                        placeholder="Billetes de 5" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
@@ -127,64 +128,84 @@
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 200</span>
                                     <input id="b200" min="0" title="billetes de 200" type="number" class="form-control"
-                                        placeholder="Billetes de 200" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
 
+
+                            </div>
+
+                            <div class="row">
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 3</span>
                                     <input id="b3" min="0" title="billetes de 3" type="number" class="form-control"
-                                        placeholder="Billetes de 3" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
+
 
                             <div class="row">
 
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 100</span>
                                     <input id="b100" min="0" title="billetes de 100" type="number" class="form-control"
-                                        placeholder="Billetes de 100" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="col input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Billetes de 1</span>
-                                    <input id="b1" min="0" title="billetes de 1" type="number" class="form-control"
-                                        placeholder="Billetes de 1" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Billetes de 50</span>
-                                    <input id="b50" min="0" title="billetes de 50" type="number" class="form-control"
-                                        placeholder="Billetes de 50" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                </div>
-
-                                <div class="col input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Monedas de 0.20</span>
-                                    <input id="b0.2" min="0" title="Moneda de o.20" type="number" class="form-control"
-                                        placeholder="Monedas de 0.20" aria-label="Username"
+                                    <span class="input-group-text" id="basic-addon1">Billetes de 1</span>
+                                    <input id="b1" min="0" title="billetes de 1" type="number" class="form-control"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
+
+
+
+                            <div class="row">
+                                <div class="col input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Billetes de 50</span>
+                                    <input id="b50" min="0" title="billetes de 50" type="number" class="form-control"
+                                        placeholder="" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+
+                               
+                            </div>
+
+                            <div class="row">
+                                <div class="col input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Monedas de 0.20</span>
+                                    <input id="b0.2" min="0" title="Moneda de o.20" type="number" class="form-control"
+                                        placeholder="" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+
+                        
+
 
                             <div class="row">
 
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Billetes de 20</span>
                                     <input id="b20" min="0" title="Billetes de 20" type="number" class="form-control"
-                                        placeholder="Billetes de 20" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
 
+                               
+                            </div>
+
+                            <div class="row">
                                 <div class="col input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">Monedas de 0.05</span>
                                     <input id="b0.05" min="0" title="Monedas de 0.05" type="number" class="form-control"
-                                        placeholder="Monedas de 0.05" aria-label="Username"
+                                        placeholder="" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
                             </div>
@@ -327,7 +348,7 @@
                     </section>
 
                 </div>
-                <div class="col-sm-2"></div>
+
             </div>
         </div>
 
