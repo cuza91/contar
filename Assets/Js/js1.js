@@ -86,3 +86,8 @@ function totalusd(){
     return  saberusd() + sabermn() /  parseFloat(document.getElementById("tasa-cambio").value);             
   
   };
+
+
+  function tasatoque(){
+   document.getElementById("tasa2").value ="";
+  }
