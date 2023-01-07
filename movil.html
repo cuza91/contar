@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <title>Contar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <title>Contar</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/Css/css1.css" />
+    <link rel="stylesheet" href="Assets/Css/css.css" />
 
-  <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="Assets/Css/css1.css">
-  <link rel="stylesheet" href="Assets/Css/css.css">
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../contar/Assets/Js/js.js"> </script>
-  <script src="../contar/Assets/Js/js1.js"> </script>
-  <script src="../contar/Assets/Js/js2.js"> </script>
-</head>
-</head>
-
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../contar/Assets/Js/js.js"></script>
+    <script src="../contar/Assets/Js/js1.js"></script>
+    <script src="../contar/Assets/Js/js2.js"></script>
+  </head>
 </html>
 
 <body>
@@ -31,14 +31,14 @@
   <div class="clearfix container-fluid">
     <div class="row bg-primary">
       <div class="col-sm-12">
-        <label class=" h6 text-light">&nbsp;Parcial CUP:</label>
-        <input class="" id="pcup1" disabled type="text"><br>
+        <label class="h6 text-light">&nbsp;Parcial CUP:</label>
+        <input class="" id="pcup1" disabled type="text" /><br />
         <label class="h6 text-light">&nbsp;Parcial USD:</label>
-        <input id="pusd1" disabled type="text">
+        <input id="pusd1" disabled type="text" />
         <label class="h6 text-light">&nbsp;&nbsp;&nbsp;&nbsp;Total CUP:</label>
-        <input id="tcup1" disabled type="text"><br>
+        <input id="tcup1" disabled type="text" /><br />
         <label class="h6 text-light">&nbsp;&nbsp;&nbsp;&nbsp;Total USD:</label>
-        <input id="tusd1" disabled type="text">
+        <input id="tusd1" disabled type="text" />
       </div>
     </div>
   </div>
@@ -48,14 +48,26 @@
       <a class="nav-link disabled">Moneda</a>
     </li>
     <li class="nav-item">
-      <a onclick="cup1()" id="cup" class="nav-link active " aria-current="page" href="#section1">CUP</a>
+      <a
+        onclick="cup1()"
+        id="cup"
+        class="nav-link active"
+        aria-current="page"
+        href="#section1"
+        >CUP</a
+      >
     </li>
     <li class="nav-item">
-      <a onclick="usd1()" id="usd" class="nav-link active" aria-current="page" href="#section2">USD</a>
+      <a
+        onclick="usd1()"
+        id="usd"
+        class="nav-link active"
+        aria-current="page"
+        href="#section2"
+        >USD</a
+      >
     </li>
     <li class="nav-item">
-
-
       <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
         Tasa de Cambio
       </a>
@@ -64,309 +76,476 @@
       <div class="modal" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
-
             <!-- Modal Header -->
             <div class="modal-header">
               <h4 class="modal-title">Definir Tasa de Cambio</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
             </div>
 
             <!-- Modal body -->
             <div class="modal-body">
-
-
               <div class="input-group mb-3">
-
-                <button class="btn btn-outline-secondary" type="button" id="button-addon1"><b>Tasa de
-                    Cambio</b></button>
-                <input id="tasa2" type="number" min="0" class="form-control" placeholder=""
-                  aria-label="Example text with button addon" aria-describedby="button-addon1">
-
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon1"
+                >
+                  <b>Tasa de Cambio</b>
+                </button>
+                <input
+                  id="tasa2"
+                  type="number"
+                  min="0"
+                  class="form-control"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
               </div>
-
             </div>
-
-
 
             <!-- Modal footer -->
             <div class="modal-footer">
-              <button onclick="tasatoque()" type="button" class="btn btn-primary">Tasa del Toque</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+              <button
+                onclick="tasatoque()"
+                type="button"
+                class="btn btn-primary"
+              >
+                Tasa del Toque
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
             </div>
-
           </div>
         </div>
       </div>
     </li>
   </ul>
 
-
-
   <section id="sectionm1">
     <div class="container">
+      <p style="padding: 10px" class="h5 text-center text-dark">
+        Recuento de CUP
+      </p>
 
-      <p style="padding: 10px;" class="h5 text-center text-dark">Recuento de CUP</p>
-
-
-
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$1000</span>
-            <input type="number" min="0" id="m1000" class="form-control" placeholder="$1000" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m1000"
+              class="form-control"
+              placeholder="$1000"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$10</span>
-            <input type="number" min="0" id="m10" class="form-control" placeholder="$10" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m10"
+              class="form-control"
+              placeholder="$10"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$500</span>
-            <input type="number" min="0" id="m500" class="form-control" placeholder="$500" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m500"
+              class="form-control"
+              placeholder="$500"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$5</span>
-            <input type="number" min="0" id="m5" class="form-control" placeholder="$5" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m5"
+              class="form-control"
+              placeholder="$5"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$200</span>
-            <input type="number" min="0" id="m200" class="form-control" placeholder="$200" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m200"
+              class="form-control"
+              placeholder="$200"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$3</span>
-            <input type="number" min="0" id="m3" class="form-control" placeholder="$3" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m3"
+              class="form-control"
+              placeholder="$3"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$100</span>
-            <input type="number"  min="0" id="m100" class="form-control" placeholder="$100" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m100"
+              class="form-control"
+              placeholder="$100"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$1</span>
-            <input type="number"  min="0" id="m1" class="form-control" placeholder="$1" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m1"
+              class="form-control"
+              placeholder="$1"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$50</span>
-            <input type="number" min="0" id="m50" class="form-control" placeholder="$50" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m50"
+              class="form-control"
+              placeholder="$50"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$0.20</span>
-            <input type="number" min="0" id="m0.20" class="form-control" placeholder="$0.20" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m0.20"
+              class="form-control"
+              placeholder="$0.20"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$20</span>
-            <input type="number" min="0"  id="m20" class="form-control" placeholder="$20" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m20"
+              class="form-control"
+              placeholder="$20"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$0.05</span>
-            <input type="number"  min="0" id="m0.05" class="form-control" placeholder="$0.05" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="m0.05"
+              class="form-control"
+              placeholder="$0.05"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
       <div class="col">
-        <button type="button" onclick="limpiarMn1()"
-            class="btn btn-primary ">Limpiar</button>
-        <button type="button" onclick="calcularmn1()"
-            class="btn btn-primary ">Calcular</button>
+        <button type="button" onclick="limpiarMn1()" class="btn btn-primary">
+          Limpiar
+        </button>
+        <button type="button" onclick="calcularmn1()" class="btn btn-primary">
+          Calcular
+        </button>
+      </div>
     </div>
-
-
-
-
-    </div>
-
-
   </section>
 
-  <section id="sectionm2" style="display: none;">
+  <section id="sectionm2" style="display: none">
     <div class="container">
+      <p style="padding: 10px" class="h5 text-center text-dark">
+        Recuento de USD
+      </p>
 
-      <p style="padding: 10px;" class="h5 text-center text-dark">Recuento de USD</p>
-
-
-
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$1000</span>
-            <input type="number" min="0" id="i1000" class="form-control" placeholder="$1000" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i1000"
+              class="form-control"
+              placeholder="$1000"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$10</span>
-            <input type="number" min="0" id="i10" class="form-control" placeholder="$10" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i10"
+              class="form-control"
+              placeholder="$10"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$500</span>
-            <input type="number" min="0" id="i500" class="form-control" placeholder="$500" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i500"
+              class="form-control"
+              placeholder="$500"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$5</span>
-            <input type="number" min="0" id="i5" class="form-control" placeholder="$5" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i5"
+              class="form-control"
+              placeholder="$5"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$200</span>
-            <input type="number" min="0" id="i200" class="form-control" placeholder="$200" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i200"
+              class="form-control"
+              placeholder="$200"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$3</span>
-            <input type="number" min="0" id="i3" class="form-control" placeholder="$3" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i3"
+              class="form-control"
+              placeholder="$3"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$100</span>
-            <input type="number"  min="0" id="i100" class="form-control" placeholder="$100" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i100"
+              class="form-control"
+              placeholder="$100"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$1</span>
-            <input type="number"  min="0" id="i1" class="form-control" placeholder="$1" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i1"
+              class="form-control"
+              placeholder="$1"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$50</span>
-            <input type="number" min="0" id="i50" class="form-control" placeholder="$50" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i50"
+              class="form-control"
+              placeholder="$50"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$0.20</span>
-            <input type="number" min="0" id="i0.20" class="form-control" placeholder="$0.20" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i0.20"
+              class="form-control"
+              placeholder="$0.20"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
-      <div class="row" style="padding: 10px;">
+      <div class="row" style="padding: 10px">
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$20</span>
-            <input type="number" min="0"  id="i20" class="form-control" placeholder="$20" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i20"
+              class="form-control"
+              placeholder="$20"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
 
         <div class="col-6">
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">$0.05</span>
-            <input type="number"  min="0" id="i0.05" class="form-control" placeholder="$0.05" aria-label="Username"
-              aria-describedby="addon-wrapping">
+            <input
+              type="number"
+              min="0"
+              id="i0.05"
+              class="form-control"
+              placeholder="$0.05"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
           </div>
         </div>
       </div>
 
       <div class="col">
-        <button type="button" onclick="limpiarUsd1()"
-            class="btn btn-primary ">Limpiar</button>
-        <button type="button" onclick="calcularusd1()"
-            class="btn btn-primary ">Calcular</button>
-    </div>
-
-
-
-
+        <button type="button" onclick="limpiarUsd1()" class="btn btn-primary">
+          Limpiar
+        </button>
+        <button type="button" onclick="calcularusd1()" class="btn btn-primary">
+          Calcular
+        </button>
+      </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
 </body>
