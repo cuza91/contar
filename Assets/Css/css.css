@@ -1,52 +1,42 @@
-.h5 {
-    padding: 10px;
+/* Aplica un padding de 10px a todos los elementos con clase "h5" */
+h5 {
+  padding: 10px;
 }
 
+/* Aplica un padding de 10px a todos los elementos con clase "col" */
 .col {
-    padding: 10px;
+  padding: 10px;
 }
 
-
-
+/* Centra horizontalmente los elementos con id "monedas" y aplica un margen superior de 8px */
 #monedas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
 }
 
-#section1{
-    
+/* Oculta el elemento con id "section2" */
+#section2 {
+  display: none;
 }
 
-#section2{
-    display: none;  
-    
-}
-
+/* Define el estilo de los enlaces activos */
 a:active {
-    background-color: rgb(228, 238, 87) !important;
-  }
+  background-color: rgb(228, 238, 87) !important;
+}
 
+/* Aplica un margen inferior de 10px al elemento con id "tusd" */
+#tusd {
+  margin-bottom: 10px;
+}
 
-  #tusd{
-    margin-bottom: 10px;
-    
-  }
+/* Aplica un margen izquierdo de 20px al elemento con id "panel" */
+#panel {
+  margin-left: 20px;
+}
 
-  #panel{
-    margin-left: 20px;
-  }
-
-  .body{
-    width: 100%;
-  }
-
-
-
-
-
-
-
-
-
+/* Define el estilo del cuerpo de la página */
+body {
+  width: 100%;
+}
