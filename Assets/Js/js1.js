@@ -88,6 +88,4 @@ function totalusd(){
   };
 
 
-  function tasatoque(){
-   document.getElementById("tasa2").value ="";
-  }
+ 
